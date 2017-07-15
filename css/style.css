@@ -13,18 +13,39 @@ p {
     line-height: 2;
     font-size: 18px;
 }
-
+h1 {
+	font-size: 64px;
+}
 .bgimg,
 .bgimg2 {
     min-height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .bgimg {
-    background-image: url("../images/muchachos.JPG")
+    background-image: url("../images/muchachos.jpg")
 }
 
 .bgimg2 {
     background-image: url("../images/dog.jpg")
+}
+
+@media screen and (max-width: 600px){
+	h1 {
+		font-size: 36px;
+	}
+	.w3-display-container {
+		height: 300px;
+	}
+
+	.bgimg,
+	.bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 }
